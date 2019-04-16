@@ -32,23 +32,29 @@
   </script>
 </head>
 <body>
-</div>
+  <div class="calculator-container">
   <h1 class="title">Mi primer calculadora</h1>
   <input name="num1" placeholder="numero 1"/>
   <input name="num2" placeholder="numero 2"/>
   <span> = </span>
   <input name="result" placeholder="resultado"/>
+  <div class="buttons">
+    <div class="numbers">
+      <button class="number"> 1 </button>
+      <button class="number"> 2 </button>
+      <button class="number"> 3 </button>
+      <button class="number"> 4 </button>
+      <button class="number"> 5 </button>
+      <button class="number"> 6 </button>
+    </div>
+    <div class="actions">
+      <button class="action" onclick = "calcular(this)"> + </button>
+      <button class="action" onclick = "calcular(this)"> - </button>
+      <button class="action" onclick = "calcular(this)"> / </button>
+      <button class="action" onclick = "calcular(this)"> * </button>
+    </div>
   </div>
-  <br/>
-  <button onclick = "calcular(this)"> + </button>
-  <button onclick = "calcular(this)"> - </button>
-  <button onclick = "calcular(this)"> / </button>
-  <button onclick = "calcular(this)"> * </button>
-
-  <button onclick = "calcular()"> 1 </button>
-  <button onclick = "calcular()"> 2 </button>
-  <button onclick = "calcular()"> 3 </button>
-  <button> 4 </button>
+  </div>
 </body>
 </html>
 

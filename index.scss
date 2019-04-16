@@ -1,24 +1,36 @@
-h1 {
-  color: darkblue;
-}
-
-.title {
-color: purple;
-// background: lightpink;
-// display: inline-block;
-// text-align: right;
-// height: 100px;
-// border-radius: 0px 0 0px 0;
-}
 .calculator-container {
-  input, span {
-    width: 100px;
-    //float:left;
-  }
-  span {
-    width:10px;
-    display: inline-block;
-    padding: 0 10px 0 10px;
+  border: solid 1px black;
+  width: 300px;
+  margin: 0 auto;
+}
+.buttons {
+  display:flex;
+  flex-direction: row;
+  height: 40%;
+}
+.numbers {
+  padding: 5px 5px;
+  display: flex;
+  align-items: flex-start;
+  width: 85%;
+  background-color: lightblue;
+}
+.actions {
+  width: 15%;
+  padding: 5px 5px;
+  background-color: lightblue;
+}
+.number, .action {
+  margin: 1px;
+  font-size: 40px;
+  background: white;
+  outline: black;
+  &:hover {
+    background: orange;
+    color: white;
   }
 }
-
+.action {
+  width: 100%;
+  float: left;
+}
