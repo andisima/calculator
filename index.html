@@ -1,0 +1,55 @@
+<html lang="en">
+	<!DOCTYPE html>
+<head>
+	<script src="./index.js"></script>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="./index.scss">
+  <title>Calculator</title>
+  <script>
+		function calcular({innerText}) {
+			const num2 = document.getElementsByName("num2")[0].value;
+			const num1 = document.getElementsByName("num1")[0].value;
+			let result = null;
+
+			switch(innerText) {
+				case "+":
+					result = calculator.sum(Number(num1), Number(num2));
+					break;
+				case "-":
+					result = calculator.rest(Number(num1), Number(num2));
+					break;
+				case "/":
+					result = calculator.div(Number(num1), Number(num2));
+					break;
+
+				case "*":
+					result = calculator.mult(Number(num1), Number(num2));
+					break;
+      }
+
+			document.getElementsByName("result")[0].value = result;
+		}
+  </script>
+</head>
+<body>
+</div>
+  <h1 class="title">Mi primer calculadora</h1>
+  <input name="num1" placeholder="numero 1"/>
+  <input name="num2" placeholder="numero 2"/>
+  <span> = </span>
+  <input name="result" placeholder="resultado"/>
+  </div>
+  <br/>
+  <button onclick = "calcular(this)"> + </button>
+  <button onclick = "calcular(this)"> - </button>
+  <button onclick = "calcular(this)"> / </button>
+  <button onclick = "calcular(this)"> * </button>
+
+  <button onclick = "calcular()"> 1 </button>
+  <button onclick = "calcular()"> 2 </button>
+  <button onclick = "calcular()"> 3 </button>
+  <button> 4 </button>
+</body>
+</html>
+
+
